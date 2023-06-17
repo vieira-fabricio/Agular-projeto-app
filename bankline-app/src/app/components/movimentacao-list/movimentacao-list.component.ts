@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MovimentacaoService } from 'src/app/services/movimentacao.service';
 
 @Component({
   selector: 'app-movimentacao-list',
@@ -9,12 +10,24 @@ export class MovimentacaoListComponent implements OnInit {
   
   movimentacoes:any;
    
-  constructor(){
+  constructor(private movimentacaoService: MovimentacaoService){
     
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.listMovimentacoes();
+  }
+
+  listMovimentacoes(): void {
+    this.movimentacaoService.list()
+        .subscribe(
+          data => {
+            this.movimentacoes = data;
+            console.log(data);
+          },
+          error => {
+            console.log(error);
+          })
   }
   
 
