@@ -45,8 +45,5 @@ export class MovimentacaoListComponent implements OnInit {
           error => {
             console.log(error);
           })
-  }
-  
-
-  
+  } 
 }
