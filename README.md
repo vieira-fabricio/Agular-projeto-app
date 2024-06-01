@@ -15,10 +15,10 @@ A estrutura principal do projeto é organizada da seguinte forma:
 ---
 
 ## Funcionalidades
-1. **Login:** Interface para autenticação de usuários.
-2. **Dashboard:** Visualização das informações financeiras do usuário.
-3. **Transações:** Permite aos usuários visualizar e realizar transações bancárias.
-4. **Perfil do Usuário:** Permite ao usuário gerenciar suas informações pessoais.
+1. **Dashboard:** Visualização das informações financeiras do usuário.
+2. **Transações:** Permite aos usuários visualizar e realizar transações bancárias.
+3. **Login:** Interface para autenticação de usuários. (Em breve)
+4. **Perfil do Usuário:** Permite ao usuário gerenciar suas informações pessoais. (Em breve)
 
 ---
 
